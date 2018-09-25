@@ -3,17 +3,26 @@ const expect = chai.expect;
 
 it('should be 4', () => {
   const four = 2 + 2;
-  expect(four).to.equal(100);
+  expect(four).to.equal(4);
 });
 
-it('Should do return the sum of two numbers', () => {
-  // Run tests here.
+const shoe = {
+    name: "Nike",
+    price: 100
+};
 
+console.log(shoe.name);
+
+it('Should create a new item with name and price', () => {
+    console.log("test");
+
+    expect(shoe.name).to.equal("Nike");
+    expect(shoe.price).to.equal(100);
 });
 
-it('should be 4', () => {
-  const four = 2 + 2;
-  if (four !== 40) {
-    throw new Error(four + ' should be equal to 2 + 2');
-  }
+it('Should return an array containing all items in cart', () => {
+    
 });
+it('Should add a new item to the shopping cart');
+it('Should return the number of items in the cart');
+it('Should remove items from cart');
