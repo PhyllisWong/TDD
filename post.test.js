@@ -11,6 +11,21 @@ const shoe = {
     price: 100
 };
 
+const hat = {
+    name: "Kangol",
+    price: 45
+};
+
+const belt = {
+    name: "Hermes",
+    price: 500
+};
+
+const cart = {
+    items: [shoe, hat],
+    totalPrice: shoe.price + hat.price
+}
+
 console.log(shoe.name);
 
 it('Should create a new item with name and price', () => {
@@ -21,8 +36,15 @@ it('Should create a new item with name and price', () => {
 });
 
 it('Should return an array containing all items in cart', () => {
+    // return cart.items
+    expect(cart.items.length).to.equal(2);
+});
+it('Should add a new item to the shopping cart', () => {
+    cart.items.push(belt);
+    expect(cart.items.length).to.equal(3);
+});
+
+it('Should return the number of items in the cart', () => {
     
 });
-it('Should add a new item to the shopping cart');
-it('Should return the number of items in the cart');
 it('Should remove items from cart');
