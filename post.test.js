@@ -45,6 +45,10 @@ it('Should add a new item to the shopping cart', () => {
 });
 
 it('Should return the number of items in the cart', () => {
-    
+    cartSize = cart.items.length;
+    expect(cart.items.length).to.equal(cartSize);
 });
-it('Should remove items from cart');
+it('Should remove items from cart', () => {
+    cart.items.pop(belt);
+    expect(cart.items.length).to.equal(2);
+});
