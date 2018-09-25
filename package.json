@@ -1,0 +1,19 @@
+{
+  "name": "mocha-tutorial",
+  "version": "1.0.0",
+  "description": "Tutorial to learn Mocha and Chai",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha *.test.js",
+    "test-watch": "nodemon --exec 'npm test'"
+  },
+  "author": "Awesome Group",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
